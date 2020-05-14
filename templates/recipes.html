@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for recipe in recipes %}
+    
+    
+    
+    
+    
+    
+    {% endfor %}
+    <ul class="collapsible">
+    {% for recipe in recipes %}
+    <li>
+      <div class="collapsible-header"><i class="material-icons">expand_more</i>
+      <strong>{{ recipe.category }} - {{ recipe.recipe_name }}</strong></div>
+      <div class="collapsible-body"><span>
+      -{{ recipe.ingredients }}<br>
+      -{{ recipe.recipe_description }}<br>
+      -{{ recipe.quickToMake }}<br>
+      -{{ recipe.isHealthy }}<br>
+      -{{ recipe.submittedBy }}</span></div>
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
