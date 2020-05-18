@@ -11,14 +11,26 @@
     <ul class="collapsible">
     {% for recipe in recipes %}
     <li>
-      <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{ recipe.category }} - {{ recipe.recipe_name }}</strong></div>
+      <div class="collapsible-header">
+      
+      <div class="col s3">
+      <i class="material-icons">expand_more</i>
+      <a class="waves-effect waves-light btn btn_small red">Delete</a>
+      <a class="waves-effect waves-light btn btn_small blue">Edit</a>
+      </div>
+
+      <div class="col s9">
+      <strong>{{ recipe.category }} - {{ recipe.recipe_name }}</strong>
+      </div>
+
+        
+      </div>
       <div class="collapsible-body"><span>
-      -{{ recipe.ingredients }}<br>
-      -{{ recipe.recipe_description }}<br>
-      -{{ recipe.quickToMake }}<br>
-      -{{ recipe.isHealthy }}<br>
-      -{{ recipe.submittedBy }}</span></div>
+      -Ingredients: {{ recipe.ingredients }}<br>
+      -Description: {{ recipe.recipe_description }}<br>
+      -Quick to make: {{ 'yes' if recipe.quickToMake == 'on' else 'no'}}<br>
+      -Healthy: {{ 'yes' if recipe.isHealthy == 'on' else 'no'}}<br>
+      -Submitted by: {{ recipe.submittedBy }}</span></div>
     </li>
     {% endfor %}
   </ul>

@@ -20,7 +20,7 @@ mongo = PyMongo(app)
 def get_recipes():
     _recipes = mongo.db.Creative_recipes.find()
     recipe_list = [recipe for recipe in _recipes]
-    return render_template("recipes.html", 
+    return render_template('recipes.html', 
                             recipes = recipe_list)
 
 @app.route('/add_recipe')
@@ -30,7 +30,15 @@ def add_task():
     return render_template('addrecipe.html',
                            categories=mongo.db.navigation.find())
 
+@app.route('/insert_recipe', methods=['POST'])
+def insert_recipe():
+    recipes = mongo.db.Creative_recipes
+    recipes.insert_one(request.form.to_dict())
+    return redirect(url_for('get_recipes'))
+
+
 if __name__ == "__main__":
-    app.run(host=os.environ.get('IP'),
+    # app.run(host=os.environ.get('IP'),
+    app.run(host="0.0.0.0",
         port=os.environ.get('PORT'),
         debug=True)
