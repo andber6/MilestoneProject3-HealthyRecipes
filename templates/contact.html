@@ -1,0 +1,48 @@
+{% extends 'base.html' %}{% block content %}
+<div class="container formPage">
+    <div class="row center">
+        <strong><h4>Contact me</h4></strong>
+    </div>
+<div class="row">
+    <form action="mailto:andre.bergan99@hotmail.com" method="POST" encType="text/plain" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" name="_replyto" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="subject" name="_subject" type="text" class="validate">
+          <label for="subject">Subject</label>
+        </div>
+      </div>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit" class="waves-effect waves-light btn" value="submit" name="submit">
+            <i class="material-icons right">send</i>
+            Submit
+        </button>
+      </div>
+    </form>
+  </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
