@@ -24,10 +24,11 @@ This website is simply for the purpose of learning, but is also a 'public reposi
 
 * I have yet to fix a proper search option to be able to look through all the recipes in an efficient way in case the list would get long, but I chose to keep the search icon/button
 regardless because I think it looked nice and I plan on fixing it in the future
-* I left social icons out on purpose because I tried adding them and thought that the footer looked better without it. Hence the reason I just wrote "Github" an "LinkedIn"
+* I left social icons out on purpose because I tried adding them and thought that the footer looked better without it. Hence the reason I just wrote "Github" and "LinkedIn"
 and added the respective links instead of keeping the icons
-* I have also yet to implement contact me form that sends mail directly to my mail. I'm thinking of maybe solving this with emailjs, but thought that I should rather use my time on
-other things. By clicking submit, the application will open an email that will let them email me directly, but unfortunately does not send directly from the form as it is for now
+* I have also yet to implement contact me form that sends mail directly to my mail from the form. I'm thinking of maybe solving this with emailjs, 
+but thought that I should rather use my time on other things. By clicking submit, the application will open an email that will let them email me directly, 
+but unfortunately does not send directly from the form as it is for now
 
 ## Technologies used ##
 
@@ -43,20 +44,27 @@ other things. By clicking submit, the application will open an email that will l
 ## Testing ##
 
 I have run numerous tests and I am positive that things finally work as they should.
-I have conducted tests over a long time and struggled forever with getting all routing correctly set up, but as a result of all the troubling the routing has caused me, it also
-made me learn a great deal about routing and exactly what is going on. One of many things that took me forever to solve was when I was trying to update my recipes, I was running
-recipes = mongo.db.recipes.find() instead of mongo.db.recipes. Or all the hours spent because I wrote {{url_for('update_recipe', recipe_id=recipe_id)}} instead of
+I have conducted tests over a long period of time and struggled forever with getting all routing correctly set up, but as a result of all the troubling the routing has caused me, 
+it also made me learn a great deal about routing and exactly what is going on. One of many things that took me forever to solve was when I was trying to update my recipes, 
+I was running: 
+recipes = mongo.db.recipes.find() instead of mongo.db.recipes. Or all the hours spent because I wrote:
+{{url_for('update_recipe', recipe_id=recipe_id)}} instead of:
 {{url_for('update_recipe', recipe_id=recipe._id)}}. 
-I also encountered some problem with chache that made my css not apply even in inkognito mode, which I ended up finding a solution to: ctrl + shift + r in inkognito mode has
-helped me a lot this project and saved me from numerous headaches.
+I also encountered some problem with chache that made my css not apply even in inkognito mode, which I ended up finding a solution to: 'ctrl + shift + r' in inkognito mode has
+helped me a lot in this project and saved me from numerous headaches.
 
 I also had some trouble with git branches when trying to push to github, but a friend of mine was of great help.
 
 ### Deployment ###
 
+* I deployed this project with heroku through github.
+* Run the program with the command "python3 app.py" in the terminal
+* I added the live link to my github repository so that anyone can just click that and easily see the final result in case of running the program through 
+the terminal would be a little bit complicated for some
+* I used an environment variable to be able to access my mongoDB, which I included in my .gitignore in order to keep it secret of course
 
 ### Acknowledgements ### 
 
 I received the idea of a recipe list from code institute's milestone project suggestions and thought it was a great idea for me since I am very interested in fitness and living a
 healthy lifestyle. 
-I want to thanks 'Uncle Google' for all the help he has been along the way, as well as Code Institute's tutors.
+I want to thank Google for all the help along the way, as well as Code Institute's tutors, and of course the stackOverflow community.

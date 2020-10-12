@@ -30,7 +30,7 @@
     width: 100%;
     margin-top: auto;
     z-index: 1;
-    max-height: 40vh;
+    max-height: 35vh;
     overflow-y: scroll;
 }
 .formPage {
