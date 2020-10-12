@@ -57,7 +57,7 @@ I also had some trouble with git branches when trying to push to github, but a f
 
 ### Deployment ###
 
-* I deployed this project with heroku through github.
+* I deployed this project with github pages.
 * Run the program with the command "python3 app.py" in the terminal
 * I added the live link to my github repository so that anyone can just click that and easily see the final result in case of running the program through 
 the terminal would be a little bit complicated for some
