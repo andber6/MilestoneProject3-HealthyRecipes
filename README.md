@@ -7,8 +7,8 @@ The goal of this project is simply to get a better understanding of the technolo
 
 ## UX ##
 
-In this recipe project I have spent a lot of time getting it all to work correctly.
-I have met many challenges along the way when routing and updating new records, but I feel much more confident and I'm pleased with the result.
+In this recipe project I have spent a lot of time getting it all to work correctly, but I am very happy with the end result.
+I believe this project has great UX because of the user-friendly transitions, routing and styling with everything being easily accessed.
 
 This website is simply for the purpose of learning, but is also a 'public repository' for recipes that anyone can add their own or find other creative recipes.
 
@@ -42,7 +42,7 @@ other things. By clicking submit, the application will open an email that will l
 
 ## Testing ##
 
-I have run numerous tests and I am positive that things finally work as they should. 
+I have run numerous tests and I am positive that things finally work as they should.
 I have conducted tests over a long time and struggled forever with getting all routing correctly set up, but as a result of all the troubling the routing has caused me, it also
 made me learn a great deal about routing and exactly what is going on. One of many things that took me forever to solve was when I was trying to update my recipes, I was running
 recipes = mongo.db.recipes.find() instead of mongo.db.recipes. Or all the hours spent because I wrote {{url_for('update_recipe', recipe_id=recipe_id)}} instead of
@@ -52,5 +52,11 @@ helped me a lot this project and saved me from numerous headaches.
 
 I also had some trouble with git branches when trying to push to github, but a friend of mine was of great help.
 
-## Deployment ##
+### Deployment ###
 
+
+### Acknowledgements ### 
+
+I received the idea of a recipe list from code institute's milestone project suggestions and thought it was a great idea for me since I am very interested in fitness and living a
+healthy lifestyle. 
+I want to thanks 'Uncle Google' for all the help he has been along the way, as well as Code Institute's tutors.
