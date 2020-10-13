@@ -13,5 +13,5 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.5.7
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "MilestoneProject3-HealthyRecipes"
+          heroku_app_name: "healthyrecipesmsp3"
           heroku_email: "Andre.bergan99@hotmail.com"
