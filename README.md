@@ -50,7 +50,7 @@ I was running:
 recipes = mongo.db.recipes.find() instead of mongo.db.recipes. Or all the hours spent because I wrote:
 {{url_for('update_recipe', recipe_id=recipe_id)}} instead of:
 {{url_for('update_recipe', recipe_id=recipe._id)}}. 
-I also encountered some problem with chache that made my css not apply even in inkognito mode, which I ended up finding a solution to: 'ctrl + shift + r' in inkognito mode has
+I also encountered some problem with cache that made my css not apply even in inkognito mode, which I ended up finding a solution to: 'ctrl + shift + r' in inkognito mode has
 helped me a lot in this project and saved me from numerous headaches.
 
 I also had some trouble with git branches when trying to push to github, but a friend of mine was of great help.
